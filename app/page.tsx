@@ -15,7 +15,7 @@ const Home = () => {
     { imageSrc: "Pokemon.jpg", 
       title: "Pokemon", 
       description: "A recreation of the Pokemon Emerald game. Surprisingly, the development was easier than expected, with most challenges lying in the design aspect. It was a fun project.", 
-      technologies: ['js.jpeg'], 
+      technologies: ['JS.jpeg'], 
       projectLink: "https://pokemon-rust-rho.vercel.app/" },
 
     { imageSrc: "QueNota.jpg", 
