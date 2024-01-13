@@ -13,6 +13,18 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      minWidth: {
+        'container' : '40rem'
+      },
+      maxWidth: {
+        'cardContainer' : '41rem'
+      },
+      maxHeight: {
+        'openCard' : '30rem'
+      },
+      backgroundColor: {
+        'pardogray' : '#eaeaea'
+      }
     },
   },
   plugins: [],
