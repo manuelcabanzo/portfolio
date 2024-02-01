@@ -8,11 +8,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
       minWidth: {
         'container' : '40rem'
       },
@@ -23,7 +18,15 @@ const config: Config = {
         'openCard' : '30rem'
       },
       backgroundColor: {
-        'pardogray' : '#eaeaea'
+        'pardogray' : '#111111',
+        'bg' : '#111111'
+      },
+      height: {
+        'right' : '9.6rem'
+      },
+      textColor: {
+        'button' : '#240046',
+        'buttonafter' : '#f15bb5'
       }
     },
   },

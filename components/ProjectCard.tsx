@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Globe, X } from 'lucide-react';
 
 interface ProjectCardProps {
-  imageSrc?: string;
+  imageSrc: string;
   title: string;
   description: string;
   technologies: string[] | undefined;
@@ -16,6 +16,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   technologies = [],
   projectLink,
 }) => {
+  
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
@@ -35,7 +36,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <>
       <div
-        className="flex-none w-28 h-28 bg-white rounded-3xl overflow-hidden cursor-pointer opacity-75 hover:opacity-100"
+        className="flex-none w-28 h-28 bg-white rounded-3xl overflow-hidden cursor-pointer opacity-100 hover:opacity-75 transition duration-700 ease-in-out"
         onClick={openModal}
       >
         <div className="relative overflow-hidden">
@@ -61,11 +62,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                   <h2 className="text-2xl font-bold">{title}</h2>
                   <div className="flex space-x-4">
                     {projectLink && (
-                      <button onClick={openProjectLink} className="text-blue-300 hover:text-blue-500">
+                      <button onClick={openProjectLink} className="text-gray-400 hover:text-buttonafter transition duration-700 ease-in-out">
                         <Globe size={23} />
                       </button>
                     )}
-                    <button onClick={closeModal} className="text-gray-400 hover:text-gray-900">
+                    <button onClick={closeModal} className="text-gray-400 hover:text-gray-900 transition duration-700 ease-in-out">
                       <X size={25} />
                     </button>
                   </div>

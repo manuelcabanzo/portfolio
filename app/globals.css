@@ -16,3 +16,11 @@ html {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
+
+::selection {
+  background: #f15bb5;
+}
+::-moz-selection {
+  background: #f15bb5;
+}
+
