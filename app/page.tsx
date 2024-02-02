@@ -5,12 +5,11 @@ import { useRouter } from "next/navigation";
 import { Banana, Fish, Github, Mail } from "lucide-react";
 
 import ProjectCard from "@/components/ProjectCard";
-import BananaModal from '@/components/Banana';
 import FishModal from '@/components/Fish';
 
 const Home = () => {
   const router = useRouter();
-  const [isBananaModalOpen, setIsBananaModalOpen] = useState(false);
+  const [isBananaModalOpen, setIsBananaModalOpen] = useState(true); //////////false
   const [isFishModalOpen, setIsFishModalOpen] = useState(false);
 
   const [cards, setCards] = useState([
@@ -45,14 +44,6 @@ const Home = () => {
     window.open("https://github.com/manuelcabanzo", "_blank");
   };
 
-  const onClickBanana = () => {
-    setIsBananaModalOpen(true);
-  };
-
-  const onCloseBananaModal = () => {
-    setIsBananaModalOpen(false);
-  };
-
   const onClickFish = () => {
     setIsFishModalOpen(true);
   };
@@ -63,7 +54,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="w-full h-full flex items-center justify-center bg-bg">
+      <div className="w-full h-full flex items-center justify-center bg-blackity">
         <div className="min-w-container flex flex-col relative">
           <div className="flex flex-row">
           <div className="cardContainer bg-pardogray p-6 rounded-3xl border-2 border-gray-400 hover:border-white transition duration-700 ease-in-out w-80 grid grid-cols-2 items-center justify-center">
@@ -99,19 +90,12 @@ const Home = () => {
                     <button onClick={onClickGit} className="mr-4 text-white hover:text-buttonafter transition duration-700 ease-in-out">
                       <Github size={18} />
                     </button>
-                    <button onClick={onClickBanana} className="mr-4 text-white hover:text-buttonafter transition duration-700 ease-in-out">
-                      <Banana size={18} />
-                    </button>
                     <button onClick={onClickFish} className="text-white hover:text-buttonafter transition duration-700 ease-in-out">
                       <Fish size={18} />
                     </button>
                   </div>
                 </div>
               </div>
-
-              {isBananaModalOpen && (
-                <BananaModal onClose={onCloseBananaModal} />
-              )}
 
               {isFishModalOpen && (
                 <FishModal onClose={onCloseFishModal} />

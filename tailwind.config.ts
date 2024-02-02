@@ -18,11 +18,15 @@ const config: Config = {
         'openCard' : '30rem'
       },
       backgroundColor: {
-        'pardogray' : '#111111',
-        'bg' : '#111111'
+        'blackity' : '#111111',
+        'pink' : '#f15bb5'
       },
       height: {
-        'right' : '9.6rem'
+        'right' : '9.6rem',
+        'game' : '41rem'
+      },
+      width : {
+        'game' : '41rem'
       },
       textColor: {
         'button' : '#240046',
