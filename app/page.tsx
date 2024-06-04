@@ -26,12 +26,12 @@ const Home = () => {
 
     { imageSrc: "Others.webp", 
       title: "Others", 
-      description: "Projects include an AR Mobile App, a Photo Sticker Mobile App, CPVTON AI, a Marketplace Admin & Store, a 3D Marketplace, Face and Body Detection Apps, and an Encrypter.",
+      description: "Projects include an AR Mobile App, a Photo Sticker Mobile App, CPVTON integrated into a marketplace, a Marketplace Admin & Store built with 3D assets, Face and Body Detection Apps, an Encrypter, and a 3D shooter game alongside a Rust app featuring GUI interfaces.",
     },
 
     { imageSrc: "Current.webp", 
       title: "Current", 
-      description: "Projects include an AR Mobile App, a Photo Sticker Mobile App, CPVTON integrated into a marketplace, a Marketplace Admin & Store built with 3D assets, Face and Body Detection Apps, and an Encrypter.", 
+      description: "Venturing into cutting-edge technologies while advancing expertise in web development techniques.", 
     }
   ]);
 
