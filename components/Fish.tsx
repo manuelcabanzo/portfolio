@@ -6,7 +6,20 @@ interface FishModalProps {
 }
 
 const FishModal: React.FC<FishModalProps> = ({ onClose }): ReactElement => {
-  const technologies = ['JS.webp', 'NextJs.webp', 'React.webp', 'Convex.webp', 'MongoDB.webp', 'ShadcnUI.webp', 'StyledComponents.webp', 'Tailwindcss.webp', 'Threejs.webp', 'ReactNative.webp', 'Python.webp', 'OpenCV.webp', 'Azure.webp', 'Blender.webp', 'Unity.webp'];
+  const technologies = [
+    'JS.webp', 
+    'React.webp', 
+    'ReactNative.webp', 
+    'NextJs.webp', 
+    'Astro.webp',
+    'ShadcnUI.webp', 
+    'Tailwindcss.webp', 
+    'StyledComponents.webp', 
+    'Threejs.webp', 
+    'GSAP.webp',
+    'Unity.webp',
+    'Blender.webp'
+  ];
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center">

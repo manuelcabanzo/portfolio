@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useCallback } from 'react';
 import gsap from 'gsap';
 import Link from 'next/link';
 
@@ -18,7 +18,7 @@ const NotFound = () => {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const textRef = useRef<HTMLDivElement | null>(null);
 
-  const changeColor = () => {
+  const changeColor = useCallback(() => {
     const textElement = textRef.current;
 
     if (textElement) {
@@ -29,11 +29,11 @@ const NotFound = () => {
         onComplete: changeColor,
       });
     }
-  };
+  }, [textRef]);
 
   useEffect(() => {
     changeColor();
-  }, []);
+  }, [changeColor]);
 
   return (
     <Link href='/' className='h-screen w-screen flex items-center justify-center bg-black overflow-hidden cursor-default'>
@@ -47,4 +47,3 @@ const NotFound = () => {
 };
 
 export default NotFound;
-

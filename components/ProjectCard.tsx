@@ -52,7 +52,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <div className="relative z-10 bg-white p-8 rounded-3xl max-w-xl w-full max-h-openCard overflow-y-auto flex">
             <div className="w-1/2 pr-4 h-full">
               {imageSrc && (
-                <img src={imageSrc} alt={title} className="w-full h-full object-cover rounded-3xl" />
+                <img src={imageSrc} alt={title} className="w-full h-full object-cover rounded-3xl"/>
               )}
             </div>
 
@@ -77,7 +77,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 <div className="flex items-end">
                   {technologies && technologies.length > 0 && (
                     technologies.map((tech, index) => (
-                      <img key={index} src={tech} alt={tech} className="w-6 h-6 mr-2" />
+                      <img key={index} src={tech} alt={tech} className="w-6 h-6 mr-2"/>
                     ))
                   )}
                 </div>

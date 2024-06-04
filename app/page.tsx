@@ -2,20 +2,19 @@
 
 import { useState } from 'react';
 import { useRouter } from "next/navigation";
-import { Banana, Fish, Github, Mail } from "lucide-react";
+import { Fish, Github, Mail } from "lucide-react";
 
 import ProjectCard from "@/components/ProjectCard";
 import FishModal from '@/components/Fish';
 
 const Home = () => {
   const router = useRouter();
-  const [isBananaModalOpen, setIsBananaModalOpen] = useState(true); //////////false
   const [isFishModalOpen, setIsFishModalOpen] = useState(false);
 
   const [cards, setCards] = useState([
     { imageSrc: "Pokemon.webp", 
       title: "Pokemon", 
-      description: "A recreation of the Pokemon Emerald game. Surprisingly, the development was easier than expected, with most challenges lying in the design aspect. It was a fun project.", 
+      description: "A recreation of the Pokemon Emerald game. Surprisingly, the development was easier than expected, with most challenges lying in the design aspect.", 
       technologies: ["JS.webp"], 
       projectLink: "https://pokemon-rust-rho.vercel.app/" },
 
@@ -27,12 +26,12 @@ const Home = () => {
 
     { imageSrc: "Others.webp", 
       title: "Others", 
-      description: "AR Mobile App//  Photo Sticker Mobile App//  CPVTON//  Marketplace Admin & Store//  3D Marketplace//  Face and Body Detection Apps//  Encrypter.",
+      description: "Projects include an AR Mobile App, a Photo Sticker Mobile App, CPVTON AI, a Marketplace Admin & Store, a 3D Marketplace, Face and Body Detection Apps, and an Encrypter.",
     },
 
     { imageSrc: "Current.webp", 
       title: "Current", 
-      description: "Embark on a journey where every brushstroke shapes your digital persona. Explore a world teeming with endless possibilities as you craft your character's identity. Stay tuned for an immersive experience in character creation.", 
+      description: "Projects include an AR Mobile App, a Photo Sticker Mobile App, CPVTON integrated into a marketplace, a Marketplace Admin & Store built with 3D assets, Face and Body Detection Apps, and an Encrypter.", 
     }
   ]);
 
