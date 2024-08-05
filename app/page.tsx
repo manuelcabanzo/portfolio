@@ -21,7 +21,7 @@ const Home = () => {
     { imageSrc: "QueNota.webp", 
       title: "QueNota", 
       description: "QueNota delves into Notion-inspired design and technologies, experimenting with new components to improve my understanding for the development of larger projects.", 
-      technologies: ["NextJs.webp", "React.webp", "JS.webp", "Tailwindcss.webp", "Convex.webp", "ShadcnUI.webp"], 
+      technologies: ["NextJs.webp", "React.webp", "JS.webp", "Tailwindcss.webp", "ShadcnUI.webp"], 
       projectLink: "https://notasss.vercel.app/" },
 
     { imageSrc: "Others.webp", 
