@@ -6,6 +6,7 @@ import { Fish, Github, Mail } from "lucide-react";
 
 import ProjectCard from "@/components/ProjectCard";
 import FishModal from '@/components/Fish';
+import Image from 'next/image';
 
 const Home = () => {
   const router = useRouter();
@@ -73,7 +74,7 @@ const Home = () => {
             <div className="flex flex-col ml-5">
 
             <div className="info bg-pardogray p-5 rounded-3xl text-white border-2 border-gray-400 hover:border-white transition duration-700 ease-in-out w-80 h-right mb-5 flex items-center">
-                <img
+                <Image
                   src="/Avatar.webp"
                   alt="User"
                   className="w-24 h-24 rounded-3xl transition-transform duration-700 transform group-hover:rotate-y-180"
