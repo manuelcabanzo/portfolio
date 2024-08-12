@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from "next/navigation";
-import { Fish, Github, Mail } from "lucide-react";
+import { Fish, Github, Mail, File } from "lucide-react";
 
 import ProjectCard from "@/components/ProjectCard";
 import FishModal from '@/components/Fish';
@@ -22,22 +22,27 @@ const Home = () => {
     { imageSrc: "QueNota.webp", 
       title: "QueNota", 
       description: "QueNota delves into Notion-inspired design and technologies, experimenting with new components to improve my understanding for the development of larger projects.", 
-      technologies: ["NextJs.webp", "React.webp", "JS.webp", "Tailwindcss.webp", "ShadcnUI.webp"], 
+      technologies: ["NextJs.webp", "React.webp", "JS.webp", "Tailwindcss.webp", "ShadcnUI.webp", "clerk.webp"], 
       projectLink: "https://notasss.vercel.app/" },
 
     { imageSrc: "Others.webp", 
       title: "Others", 
-      description: "Projects include an AR Mobile App, a Photo Sticker Mobile App, CPVTON integrated into a marketplace, a Marketplace Admin & Store built with 3D assets, Face and Body Detection Apps, an Encrypter, and a 3D shooter game alongside a Rust app featuring GUI interfaces.",
+      description: "AR Mobile App, Photo Sticker Mobile App, 3D Third Person Shooter game, Git made in rust, Encrypter, Ecommerce Admin and Front pages, CPVTON integrated into a marketplace with some 3D assets.",
     },
 
     { imageSrc: "Current.webp", 
       title: "Current", 
-      description: "Venturing into cutting-edge technologies while advancing expertise in web development techniques.", 
+      description: "Experimenting with Back-End and Rust 🦀.", 
     }
   ]);
 
   const onClickMail = () => {
     router.push("mailto:manuelcabanzo23@gmail.com");
+  };
+  
+  const onClickFile = () => {
+    const CVPdfUrl = '/MANUEL_CABANZO.pdf';
+    window.open(CVPdfUrl, '_blank');
   };
 
   const onClickGit = () => {
@@ -77,6 +82,8 @@ const Home = () => {
                 <Image
                   src="/Avatar.webp"
                   alt="User"
+                  width={100}
+                  height={100}
                   className="w-24 h-24 rounded-3xl transition-transform duration-700 transform group-hover:rotate-y-180"
                 />
                 <div className="flex flex-col ml-5">
@@ -90,8 +97,11 @@ const Home = () => {
                     <button onClick={onClickGit} className="mr-4 text-white hover:text-buttonafter transition duration-700 ease-in-out">
                       <Github size={18} />
                     </button>
-                    <button onClick={onClickFish} className="text-white hover:text-buttonafter transition duration-700 ease-in-out">
+                    <button onClick={onClickFish} className="mr-4 text-white hover:text-buttonafter transition duration-700 ease-in-out">
                       <Fish size={18} />
+                    </button>
+                    <button onClick={onClickFile} className="text-white hover:text-buttonafter transition duration-700 ease-in-out">
+                      <File size={18} />
                     </button>
                   </div>
                 </div>

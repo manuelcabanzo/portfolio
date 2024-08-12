@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Wix_Madefor_Display } from 'next/font/google'
 import './globals.css'
+import { Analytics } from "@vercel/analytics/react"
 
 const font = Wix_Madefor_Display({ subsets: ['latin'] })
 
@@ -18,6 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={font.className}>
         {children}
+        <Analytics />
       </body>
     </html>
   )
