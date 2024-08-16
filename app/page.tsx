@@ -27,7 +27,7 @@ const Home = () => {
 
     { imageSrc: "Others.webp", 
       title: "Others", 
-      description: "AR Mobile App, Photo Sticker Mobile App, 3D Third Person Shooter game, Git made in rust, Encrypter, Ecommerce Admin and Front pages, CPVTON integrated into a marketplace with some 3D assets.",
+      description: "AR Mobile App, Photo Sticker Mobile App, 3D Third Person Shooter game, Git made in rust, IDE for mobile development made in rust, Encrypter, Ecommerce Admin and Front pages, CPVTON integrated into a marketplace with some 3D assets.",
     },
 
     { imageSrc: "Current.webp", 
