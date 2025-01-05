@@ -32,7 +32,7 @@ const Home = () => {
 
     { imageSrc: "Current.webp", 
       title: "Current", 
-      description: "Experimenting with Back-End and Rust 🦀.", 
+      description: "🦀", 
     }
   ]);
 

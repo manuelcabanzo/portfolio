@@ -18,7 +18,8 @@ const FishModal: React.FC<FishModalProps> = ({ onClose }): ReactElement => {
     'Threejs.webp', 
     'GSAP.webp',
     'Unity.webp',
-    'Blender.webp'
+    'Blender.webp',
+    'Rust.webp'
   ];
 
   return (
@@ -40,7 +41,7 @@ const FishModal: React.FC<FishModalProps> = ({ onClose }): ReactElement => {
         <div className="flex flex-wrap justify-center">
           {technologies.map((tech, index) => (
             <div key={index} className="w-8 h-8 bg-gray-200 rounded-md m-1">
-              <img src={tech} alt={tech} className="w-full h-full object-cover rounded-md" />
+              <img src={tech} alt={tech} className="w-full h-full object-cover rounded-md"/>
             </div>
           ))}
         </div>
